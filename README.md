@@ -2,7 +2,7 @@
 
 Free Premium template with concept between of summer & autumn.
 
-![Summerade Preview][https://muhibbudins.github.io/the-summerade/img/preview.png]
+![Summerade Preview](https://muhibbudins.github.io/the-summerade/img/preview.png)
 
 - [See Demo](https://muhibbudins.github.io/the-summerade/)
 - [Downloads ](https://github.com/muhibbudins/the-summerade/archive/master.zip)
@@ -33,6 +33,6 @@ Install all dependency above, so run `npm install` in this folder project and la
 
 `gulp build` for production build and minify css file
 
-##t# License
+### License
 
 This project under MIT License
