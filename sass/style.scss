@@ -5,9 +5,9 @@
 @import "mixin/function.scss";
 
 /* Import Fonts */
-// @import url('https://fonts.googleapis.com/css?family=Roboto');
-// @import url('https://fonts.googleapis.com/css?family=Alex+Brush');
-// @import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
 
 /* Media Query */
 $mobile : "~(max-width: 768px)";
@@ -259,6 +259,9 @@ body {
 	text-align: center;
 	@include centerVertical();
 
+	@media (max-width: 768px) {
+		background-image: none;
+	}
 	.container {
 		display: block;
 	}
@@ -315,6 +318,9 @@ body {
 	background-size: 110% 30%;
 	background-position: bottom center;
 
+	@media (max-width: 768px) {
+		background-image: none;
+	}
 	.service-box {
 		text-align: center;
 		color: transparentize($white, 0.2);
@@ -393,6 +399,9 @@ body {
 	background-position: top left;
 	text-align: center;
 
+	@media (max-width: 768px) {
+		background-image: none;
+	}
 	.subscribe-title {
 		font-size: 30px;
 		font-family: 'Bree Serif', serif;
@@ -437,6 +446,9 @@ body {
 	background-position: top center;
 	text-align: center;
 
+	@media (max-width: 768px) {
+		background-image: none;
+	}
 	.clients-title {
 		font-size: 30px;
 		font-family: 'Bree Serif', serif;
@@ -464,6 +476,9 @@ body {
 	min-height: 200px;
 	color: $white;
 
+	@media (max-width: 768px) {
+		background-image: none;
+	}
 	.footer-menu-heading {
 		font-size: 18px;
 		font-family: 'Bree Serif', serif;
