@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="338.754mm"
+   height="35.255001mm"
+   viewBox="0 0 338.754 35.255001"
+   version="1.1"
+   id="svg4653"
+   sodipodi:docname="summerade-top.svg"
+   inkscape:version="0.92.1 unknown">
+  <defs
+     id="defs4647" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="519.75443"
+     inkscape:cy="-231.97084"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1319"
+     inkscape:window-height="744"
+     inkscape:window-x="47"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4650">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-261.745)">
+    <path
+       style="opacity:0.8;fill:#ffa100;fill-opacity:0.57386363;stroke:none;stroke-width:0.91841662px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 0 36.869141 C 1.5714513e-18 98.405924 0.0065793773 103.05242 0.0078125 133.24805 L 1280.332 133.24805 C 1280.3322 123.81642 1280.3311 133.24773 1280.332 100.30664 C 932.89295 -17.645876 690.70385 100.30664 499.34766 100.30664 C 307.99143 100.30664 0 36.869141 0 36.869141 z "
+       id="path4551"
+       transform="matrix(0.26458333,0,0,0.26458333,0,261.745)" />
+    <path
+       style="opacity:0.7;fill:#ffd42a;fill-opacity:0.49431819;stroke:none;stroke-width:0.93194246px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 396.52148 17.083984 C 192.19932 18.556726 0.0078125 105.03516 0.0078125 105.03516 L 0.0078125 133.24805 L 1280.334 133.24805 C 1280.3347 103.6038 1280.3415 73.960634 1280.3906 44.316406 C 1280.3906 44.316406 1167.7211 104.88867 959.96289 104.88867 C 752.20472 104.88867 717.57897 52.2298 484.30664 22.15625 C 455.1476 18.397056 425.71037 16.873593 396.52148 17.083984 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0,261.745)"
+       id="path4549" />
+  </g>
+</svg>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Skeleton</title>
+    <!-- Meta Tags for SEO -->
+    <!-- <meta property="og:title" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:description" content=""/>
+
+    <meta name="twitter:card" content=""/>
+    <meta name="twitter:site" content=""/>
+    <meta name="twitter:creator" content=""/>
+    <meta name="twitter:title" content=""/>
+    <meta name="twitter:url" content=""/>
+    <meta name="twitter:description" content=""/>
+    <meta name="twitter:image" content=""/>
+
+    <meta itemprop="name" content=""/>
+    <meta itemprop="description" content=""/>
+    <meta itemprop="audience" content=""/>
+    <meta itemprop="image" content=""/>
+    <meta itemprop="alternativeHeadline" content=""/> -->
+    <!--[if lt IE 9]>
+    <script src="http://www.iacquire.com/wp-content/themes/iacquire/js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    <!-- Import Vendor Style -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- Import Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Search Area -->
+    <section class="search-area">
+        <div class="close-search-button" id="close-search">
+            <div class="close-line"></div>
+            <div class="close-line"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Can i help you?">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                    <div class="search-result">
+                        <h5>Recommendation</h5>
+                        <div class="result-item">
+                            <h4>Perferendis ea repudiandae nisi reprehenderit asperiores quasi.</h4>
+                            <p>Reprehenderit rerum fugiat porro similique neque, explicabo cumque in facilis unde deserunt, labore enim, odit iusto provident nam. Iusto magna.</p>
+                        </div>
+                        <div class="result-item">
+                            <h4>Modi cum voluptatum illo, inventore, ad.</h4>
+                            <p>Odio dicta deleniti tempore velit esse iste deserunt aliquam, nemo incidunt hic sapiente harum ipsa sint, omnis officiis maiores et.</p>
+                        </div>
+                        <div class="result-item">
+                            <h4>Iure laboriosam laborum minus asperiores earum quidem.</h4>
+                            <p>Mollitia cum ipsum, pariatur nisi, fuga ex qui consequuntur possimus esse error neque harum. Eum porro necessitatibus harum, in consequatu.</p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Header -->
+    <section class="header">
+        <div class="navbar navbar-default navbar-fixed-top animated fadeIn scrolled">
+            <div class="container">
+                <!-- Navigation and Brand for Tablet up -->
+                <div class="navbar-header hidden-xs">
+                    <a class="navbar-brand" href="#">Summerade</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right hidden-xs">
+                    <li><a href="#" data-slide="slide" data-slide-target=".hero">Home</a></li>
+                    <li><a href="#" data-slide="slide" data-slide-target=".service">Service</a></li>
+                    <li><a href="#" data-slide="slide" data-slide-target=".testimony">Testimony</a></li>
+                    <li><a href="#" data-slide="slide" data-slide-target=".subscribe">Subscribe</a></li>
+                    <li><a href="#" data-slide="slide" data-slide-target=".clients">Clients</a></li>
+                    <li id="search-trigger"><a href="#"><i class="fa fa-search"></i></a></li>
+                </ul>
+
+                <!-- Navigation and Brand for Mobile -->
+                <ul class="nav navbar-nav navbar-left visible-xs">
+                    <li><a class="sidebar-trigger" href="#"><i class="fa fa-bars"></i></a></li>
+                    <li><a class="navbar-brand" href="#">Summerade</a></li>
+                </ul>
+                <div class="sidebar">
+                    <ul class="sidebar-list">
+                        <li class="search">
+                            <form action="" data-aos="fade-up" data-aos-delay="500">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Can i help you?">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </form>
+                        </li>
+                        <li><a href="#" data-slide="slide" data-slide-target=".hero">Home</a></li>
+                        <li><a href="#" data-slide="slide" data-slide-target=".service">Service</a></li>
+                        <li><a href="#" data-slide="slide" data-slide-target=".testimony">Testimony</a></li>
+                        <li><a href="#" data-slide="slide" data-slide-target=".subscribe">Subscribe</a></li>
+                        <li><a href="#" data-slide="slide" data-slide-target=".clients">Clients</a></li>
+                    </ul>                    
+                </div>
+                <div class="sidebar-overlay"></div>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+    </section>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                <div class="hero-title" data-aos="fade-up" data-aos-delay="300">The Summerade</div>
+                <div class="hero-description" data-aos="fade-down" data-aos-delay="600">Free Premium template with concept middle of summer & autumn.</div>
+                <div class="hero-button" data-aos="fade-up" data-aos-delay="900">
+                    <a href="" class="btn btn-default">Hire Author</a>
+                    <a href="" class="btn btn-default bordered"><i class="fa fa-github"></i> Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service -->
+    <section class="service">
+        <div class="container">
+            <div class="col-md-4 col-sm-4 col-xs-6">
+                <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <img src="img/free.png" alt="Free Icon">
+                    </div>
+                    <div class="service-title">Totaly Free</div>
+                    <div class="service-description">
+                        This template is free for everyone, just download from repository if you want to use.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6">
+                <div class="service-box" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <img src="img/customize.png" alt="Customize Icon">
+                    </div>
+                    <div class="service-title">Customizable</div>
+                    <div class="service-description">
+                        Build with Bootstrap 3 and jQuery combine with SASS CSS Preprocessor and Inkscape for image assets.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6">
+                <div class="service-box" data-aos="fade-up" data-aos-delay="900">
+                    <div class="service-icon">
+                        <img src="img/code.png" alt="Code Icon">
+                    </div>
+                    <div class="service-title">Code Freak</div>
+                    <div class="service-description">
+                        If you want customize just change SASS file and build it with gulp & gulp-sass.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimony -->
+    <section class="testimony">
+        <div class="container">
+            <div class="col-md-4 col-sm-3">
+                <div class="testimony-intro" data-aos="fade-up" data-aos-delay="400">
+                    What Our Client Says?
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-9 col-xs-12">
+                <div class="swiper-container" id="swiper-testimony" data-aos="fade-up" data-aos-delay="800">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimony-box">
+                                <div class="testimony-title">John Doe</div>
+                                <div class="testimony-description">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum id ratione quaerat rerum, eligendi, ipsa repellendus eum, incidunt fugiat ullam eius tempore eaque voluptate amet exercitationem, quam vero voluptatum adipisci?"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimony-box">
+                                <div class="testimony-title">Marry Doe</div>
+                                <div class="testimony-description">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum id ratione quaerat rerum, eligendi, ipsa repellendus eum, incidunt fugiat ullam eius tempore eaque voluptate amet exercitationem, quam vero voluptatum adipisci?"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimony-box">
+                                <div class="testimony-title">Lenon Joe</div>
+                                <div class="testimony-description">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum id ratione quaerat rerum, eligendi, ipsa repellendus eum, incidunt fugiat ullam eius tempore eaque voluptate amet exercitationem, quam vero voluptatum adipisci?"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimony-box">
+                                <div class="testimony-title">Jacky Doe</div>
+                                <div class="testimony-description">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum id ratione quaerat rerum, eligendi, ipsa repellendus eum, incidunt fugiat ullam eius tempore eaque voluptate amet exercitationem, quam vero voluptatum adipisci?"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section class="subscribe">
+        <div class="container">
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                <div class="subscribe-title" data-aos="fade-up" data-aos-delay="300">Love This Template?</div>
+                <form action="" data-aos="fade-up" data-aos-delay="500">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Write your e-mail">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Subscribe</button>
+                        </span>
+                    </div>
+                </form>
+                <a href="" data-aos="fade-up" data-aos-delay="700">
+                    <i class="fa fa-heart"></i> Don't forget to fork & star this template
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients -->
+    <section class="clients">
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="clients-title" data-aos="fade-up" data-aos-delay="300">Our Clients</div>
+                <div class="swiper-container" id="swiper-client" data-aos="fade-up" data-aos-delay="500">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/120x120.png" alt="Dummy Clients">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/120x120.png" alt="Dummy Clients">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/120x120.png" alt="Dummy Clients">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/120x120.png" alt="Dummy Clients">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/120x120.png" alt="Dummy Clients">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/120x120.png" alt="Dummy Clients">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/120x120.png" alt="Dummy Clients">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/120x120.png" alt="Dummy Clients">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/120x120.png" alt="Dummy Clients">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/120x120.png" alt="Dummy Clients">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/120x120.png" alt="Dummy Clients">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/120x120.png" alt="Dummy Clients">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/120x120.png" alt="Dummy Clients">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Menu -->
+    <section class="footer-menu">
+        <div class="container">
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="footer-menu-heading">Blogs</div>
+                <ul class="footer-menu-list">
+                    <li><a href="">Technology</a></li>
+                    <li><a href="">Internet of Things</a></li>
+                    <li><a href="">Web Design</a></li>
+                    <li><a href="">UX Design</a></li>
+                    <li><a href="">Design Pattern</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="footer-menu-heading">About</div>
+                <ul class="footer-menu-list">
+                    <li><a href="">Repository</a></li>
+                    <li><a href="">Downloads</a></li>
+                    <li><a href="">License</a></li>
+                    <li><a href="">Author</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="footer-menu-heading">Social Media</div>
+                <ul class="footer-icon-list">
+                    <li>
+                        <a href="" class="btn btn-primary"><i class="fa fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="btn btn-danger"><i class="fa fa-google"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="btn btn-default"><i class="fa fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <section class="copyright">
+        <div class="container">
+            Copyright by Muhibbudin Suretno | License MIT
+        </div>
+    </section>
+
+    <!-- Import Vendor Script -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+    <!-- Import Custom Script -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

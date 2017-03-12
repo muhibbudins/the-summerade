@@ -1,0 +1,524 @@
+/* Import Color */
+@import "color/flat.scss";
+
+/* Import Function */
+@import "mixin/function.scss";
+
+/* Import Fonts */
+// @import url('https://fonts.googleapis.com/css?family=Roboto');
+// @import url('https://fonts.googleapis.com/css?family=Alex+Brush');
+// @import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+/* Media Query */
+$mobile : "~(max-width: 768px)";
+
+/* Global */
+body {
+  	font-family: 'Roboto', sans-serif;
+	color: transparentize($black, 0.3);
+	font-size: 12px;
+	background-color: #FFF8E7;
+}
+
+/* Search Area */
+.search-area {
+	position: fixed;
+	width: 100%;
+	height: 0;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	margin-top: 0;
+	z-index: 102;
+	padding-top: 5%;
+	overflow: hidden;
+	@include transition(0.3s);
+
+	&.active {
+		top: 0;
+		height: 100vh;
+		visibility: visible;
+		background-color: $sunflower;
+	}
+
+	.close-search-button {
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		margin: 20px;
+		cursor: pointer;
+
+		.close-line {
+			width: 35px;
+			height: 5px;
+			position: absolute;
+			background-color: transparentize($white, 0.3);
+			@include radius(20px);
+
+			&:nth-child(1) {
+				transform: rotate(45deg);
+			}
+			&:nth-child(2) {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+	.form-control {
+		box-shadow: none;
+		padding: 15px 20px;
+		line-height: normal;
+		height: auto;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border: 1px solid $white;
+		border-right: 0;
+		background-color: transparent;
+		color: $white;
+		font-size: 22px;
+		@include placeholder($white);
+	}
+	.btn {
+		padding: 11.5px 20px;
+		box-shadow: none;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		border: 1px solid $white;
+		border-left: 0;
+		font-size: 23px;
+		background-color: transparent;
+		color: $white;
+	}
+	.search-result {
+		margin-top: 20px;
+		color: $white;
+		max-height: 400px;
+
+		.result-item {
+			width: 100%;
+			cursor: pointer;
+			padding: 5px 10px;
+			font-size: 12px;
+			border: 1px solid transparentize($white, 0.6);
+			margin-bottom: 5px;
+			@include radius(10px);
+
+			&:hover {
+				border: 1px solid transparentize($white, 0.1);
+			}
+		}
+	}
+}
+
+/* Header */
+.header {
+	.navbar {
+		background-color: transparent;
+		border-bottom: 0;
+		z-index: 99;
+
+		&.scrolled {
+			background-color: $white;
+			box-shadow: 0px -3px 6px 3px transparentize($black, 0.5);
+			.navbar-brand {
+				padding: 20px 15px;
+				color: $sunflower;
+			}
+			.nav li a {
+				padding: 20px 18px;
+			}
+		}
+		.navbar-brand {
+			font-size: 26px;
+			padding: 30px 15px;
+			color: lighten($black, 30%);
+			font-family: 'Alex Brush', cursive;
+			@include transition(0.3s);
+		}
+		.nav {
+			li {
+				a {
+					color: lighten($black, 30%);
+					padding: 30px 18px;
+					font-size: 13px;
+					@include transition(0.3s);
+
+					&:hover {
+						color: $sunflower;
+					}
+				}
+			}
+		}
+
+		@media (max-width: 768px) {
+			&.scrolled {
+				.nav li a {
+					padding: 20px 20px;
+				}
+			}
+			.nav {
+				display: inline-block;
+				li {
+					float: left;
+					a {
+						padding: 20px 20px;
+						font-size: 20px;
+
+						&.navbar-trigger {
+							padding: 15px 10px 15px 30px;
+							font-size: 26px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.sidebar-overlay {
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		left: 0;
+		top: 0;
+		background-color: transparentize($black, 0.4);
+		z-index: 100;
+		visibility: hidden;
+	}
+	.sidebar {
+		width: 300px;
+		height: 100vh;
+		position: fixed;
+		left: 0;
+		top: 0;
+		background-color: $white;
+		z-index: 101;
+		margin-left: -300px;
+		@include transition(0.3s);
+
+		&.active {
+			margin-left: 0;
+		}
+		.sidebar-list {
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+
+			li {
+				a {
+					display: block;
+					position: relative;
+					padding: 15px 20px;
+					width: 100%;
+					color: inherit;
+					text-decoration: none;
+					border-bottom: 1px solid transparentize($black, 0.9);
+					@include transition(0.3s);
+
+					&:hover {
+						background-color: transparentize($sunflower, 0.8);
+					}
+				}
+
+				&.search {
+					padding: 10px;
+					.form-control, .btn {
+						box-shadow: none;
+						padding: 10px 15px;
+						line-height: normal;
+						height: auto;
+						border-top-left-radius: 10px;
+						border-bottom-left-radius: 10px;
+						border: 1px solid lighten($sunflower, 15%);
+						background-color: transparent;
+						color: lighten($sunflower, 15%);
+						@include placeholder(lighten($sunflower, 15%));
+					}
+					.btn {
+						border-top-left-radius: 0px;
+						border-bottom-left-radius: 0px;
+						border-top-right-radius: 10px;
+						border-bottom-right-radius: 10px;
+						background-color: lighten($sunflower, 15%);
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Hero */
+.hero {
+	height: 100vh;
+	background-image: url(../img/summerade-top.svg);
+	background-repeat: no-repeat;
+	background-size: 110% 15%;
+	background-position: bottom center;
+	text-align: center;
+	@include centerVertical();
+
+	.container {
+		display: block;
+	}
+	.hero-title {
+		font-family: 'Alex Brush', cursive;
+		font-size: 72px;
+		line-height: normal;
+
+		@media (max-width: 768px) {
+			font-size: 36px;
+		}
+	}
+	.hero-description {
+		font-size: 16px;
+		margin: 10px 0;
+	}
+	.hero-button {
+		margin: 20px 0;
+		
+		.btn {
+			border: 0;
+			padding: 10px 25px;
+			background-color: $sunflower;
+			border: 1px solid transparent;
+			color: $white;
+			font-size: 14px;
+			@include radius(20px);
+			@include transition(0.3s);
+
+			&:hover {
+				background-color: darken($sunflower, 3%);
+			}
+
+			&.bordered {
+				background-color: transparent;
+				border: 1px solid $sunflower;
+				color: $sunflower;
+
+				&:hover {
+					color: $white;
+					background-color: $sunflower;
+				}
+			}
+		}
+	}
+}
+
+/* Service */
+.service {
+	padding: 60px 0 200px 0;
+	background-color: #FFD260;
+	background-image: url(../img/summerade-middle.svg);
+	background-repeat: no-repeat;
+	background-size: 110% 30%;
+	background-position: bottom center;
+
+	.service-box {
+		text-align: center;
+		color: transparentize($white, 0.2);
+
+		.service-icon {
+			position: relative;
+			display: block;
+			margin: 30px auto;
+			text-align: center;
+
+			img {
+				width: auto;
+				height: 150px;
+			}
+		}
+		.service-title {
+			font-size: 20px;
+			margin: 10px 0;
+		}
+		.service-description {
+			font-size: 14px;
+		}
+	}
+}
+
+/* Testimony */
+.testimony {
+	padding: 100px 0;
+	
+	.testimony-intro {
+		font-size: 56px;
+		line-height: 1;
+		font-family: 'Bree Serif', serif;
+		
+		@media (max-width: 768px) {
+			font-size: 28px;
+			text-align: center;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		&:before {
+			content: '\201c';
+			position: absolute;
+			top: -20px;
+			left: -30px;
+		}
+	}
+	.testimony-box {
+		padding: 20px 0;
+
+		.testimony-title {
+			font-size: 24px;
+			font-family: serif;
+
+			@media (max-width: 768px) {
+				font-size: 20px;
+			}
+		}
+		.testimony-description {
+			margin: 10px 0;
+			font-size: 14px;
+		}
+	}
+}
+
+/* Subscribe */
+.subscribe {
+	padding: 100px 0 30px 0;
+	background-color: #F6D762;
+	background-image: url(../img/summerade-subscribe.svg);
+	background-repeat: no-repeat;
+	background-size: 110% 30%;
+	background-position: top left;
+	text-align: center;
+
+	.subscribe-title {
+		font-size: 30px;
+		font-family: 'Bree Serif', serif;
+		margin: 30px 0;
+		color: $white;
+	}
+	.form-control, .btn {
+		box-shadow: none;
+		padding: 15px 20px;
+		line-height: normal;
+		height: auto;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border: 1px solid $white;
+		background-color: transparent;
+		color: $white;
+		@include placeholder($white);
+	}
+	.btn {
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		background-color: $white;
+		color: $sunflower;
+	}
+	a {
+		display: block;
+		color: $white;
+		text-decoration: none;
+		margin: 20px 0;
+		font-size: 14px;
+	}
+}
+
+/* Clients */
+.clients {
+	padding: 160px 0 60px 0;
+	background-image: url(../img/summerade-blog.svg);
+	background-repeat: no-repeat;
+	background-size: 110% 30%;
+	background-position: top center;
+	text-align: center;
+
+	.clients-title {
+		font-size: 30px;
+		font-family: 'Bree Serif', serif;
+		margin: 30px 0;
+	}
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        margin-bottom: 40px;
+        @include centerVertical();
+    }
+}
+
+/* Footer Menu */
+.footer-menu {
+	padding: 100px 0 60px 0;
+	background-image: url(../img/summerade-subscribe.svg);
+	background-repeat: no-repeat;
+	background-size: 110% 30%;
+	background-position: top left;
+	background-color: lighten($sunflower, 2%);
+	min-height: 200px;
+	color: $white;
+
+	.footer-menu-heading {
+		font-size: 18px;
+		font-family: 'Bree Serif', serif;
+		margin: 10px 0;
+	}
+	.footer-menu-list {
+		list-style-type: none;
+		padding: 0;
+		
+		li {
+			margin: 0;
+			margin-bottom: 5px;
+
+			a {
+				color: $white;
+				text-decoration: none;
+				opacity: 0.8;
+				font-size: 13px;
+
+				&:hover {
+					opacity: 1;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.footer-icon-list {
+		list-style-type: none;
+		display: inline-block;
+		padding: 0;
+
+		li {
+			margin: 5px;
+			margin-left: 0;
+			float: left;
+
+			img {
+				width: 50px;
+				height: auto;
+				@include radius(50%);
+			}
+			.btn {
+				padding: 10px 15px;
+				font-size: 18px;
+				border: 0;
+				@include radius(50%);
+			}
+		}
+	}
+}
+
+/* Copyright */
+.copyright {
+	background-color: darken($sunflower, 2%);
+	padding: 20px 0;
+	color: transparentize($white, 0.3);
+	text-align: left;
+}

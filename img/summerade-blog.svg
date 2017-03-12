@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1280"
+   height="100"
+   viewBox="0 0 338.66666 26.458334"
+   version="1.1"
+   id="svg5726"
+   inkscape:version="0.92.1 unknown"
+   sodipodi:docname="summerade-blog.svg">
+  <defs
+     id="defs5720" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.42929688"
+     inkscape:cx="659.96717"
+     inkscape:cy="-70.348893"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1319"
+     inkscape:window-height="744"
+     inkscape:window-x="47"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5723">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-270.54165)">
+    <path
+       style="opacity:1;fill:#f5d34f;fill-opacity:0.64705882;stroke:none;stroke-width:0.26458332"
+       d="M 0,270.54166 H 338.66666 C 303.74672,309.69278 229.50268,283.441 195.37276,283.441 130.69741,274.07063 33.176888,314.19808 0,270.54166 Z"
+       id="rect6271"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path6283"
+       d="M 0,270.54166 H 338.66666 C 303.74672,309.69278 155.54454,281.59205 121.41462,281.59205 56.739266,272.22168 33.176888,314.19808 0,270.54166 Z"
+       style="opacity:1;fill:#f5d34f;fill-opacity:0.64705882;stroke:none;stroke-width:0.26458332" />
+  </g>
+</svg>
